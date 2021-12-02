@@ -1,0 +1,78 @@
+{
+  "_format": "hh-sol-cache-2",
+  "files": {
+    "/home/di/zknftmint/contracts/contracts/Hasher.sol": {
+      "lastModificationDate": 1638404159322,
+      "contentHash": "d95f3c6bd5a9829cd058195e88bd76ca",
+      "sourceName": "contracts/Hasher.sol",
+      "solcConfig": {
+        "version": "0.8.10",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./SnarkConstants.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "Hasher",
+        "PoseidonT2"
+      ]
+    },
+    "/home/di/zknftmint/contracts/contracts/SnarkConstants.sol": {
+      "lastModificationDate": 1638403774594,
+      "contentHash": "690300074068a122df0e45b6fc4a2a0e",
+      "sourceName": "contracts/SnarkConstants.sol",
+      "solcConfig": {
+        "version": "0.8.10",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "SnarkConstants"
+      ]
+    }
+  }
+}

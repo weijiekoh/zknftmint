@@ -1,0 +1,44 @@
+{
+    "name": "zknftmint-circuits",
+    "version": "1.0.0",
+    "description": "",
+    "main": "build/index.js",
+    "scripts": {
+        "circom-helper": "npx circom-helper -c ./circomHelperConfig.json -b ./build/test/ -p 9001",
+        "zkey-manager-compile": "zkey-manager compile -c ./zkeys.config.yml",
+        "zkey-manager-downloadPtau": "zkey-manager downloadPtau -c ./zkeys.config.yml",
+        "zkey-manager-genZkeys": "zkey-manager genZkeys -c ./zkeys.config.yml",
+        "export-verifier-sol": "node build/exportVerifier.js ./zkeys/NftMint_prod.0.zkey ../contracts/contracts/verifier.sol",
+        "export-test-verifier-sol": "node build/exportVerifier.js ./zkeys/NftMint_test.0.zkey ../contracts/contracts/testverifier.sol",
+        "build": "tsc",
+        "watch": "tsc --watch",
+        "test": "jest --runInBand"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/zknftmint/project.git"
+    },
+    "author": "weijiekoh",
+    "bugs": {
+        "url": "https://github.com/zknftmint/project/issues"
+    },
+    "homepage": "https://github.com/zknftmint/project#readme",
+    "dependencies": {
+        "axios": "^0.23.0",
+        "circomlibjs": "^0.1.1",
+        "crypto": "^1.0.1",
+        "ffjavascript": "^0.2.46",
+        "snarkjs": "0.4.10",
+        "shelljs": "0.8.4",
+        "zkey-manager": "0.1.1",
+        "ts-jest": "^27.0.7"
+    },
+    "devDependencies": {
+        "@types/jest": "^27.0.2",
+        "circom-helper": "^0.3.0",
+        "circom-helper": "^0.3.0",
+        "jest": "^27.3.1",
+        "lerna": "^4.0.0",
+        "typescript": "^4.4.4"
+    }
+}

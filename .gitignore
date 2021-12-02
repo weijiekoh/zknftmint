@@ -1,0 +1,16 @@
+*.wtns
+node_modules
+circomHelperConfig.json
+circuits/circomHelperConfig.json
+circuits/zkeys
+**/build/
+contracts/dist
+contracts/contracts/verifier.sol
+circuits/vk.json
+
+**/MyLogFile.log
+input.json
+proof.json
+public.json
+
+lerna-debug.log
