@@ -33,7 +33,7 @@ Navigate to the Write Contract page for the NftMint contract on Etherscan,
 click on "Connect to Web3", and select `mintWithProof`. Copy and paste the
 nullifier and the proof, and click "Write".
 
-https://goerli.etherscan.io/address/<ADDRESS>#readContract
+https://goerli.etherscan.io/address/0x7f86f894b595e74f413849c459e7310bc7475bd7#readContract
 
 If the proof is valid and you have not previously used this address to mint an
 NFT on this contract, the transaction will execute and mint an NFT to your
