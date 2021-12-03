@@ -2,7 +2,7 @@
 
 Developed for 0xPARC.
 
-Contract on Goerli: [``](https://goerli.etherscan.io/address/)
+Contract on Goerli: [`0x7f86f894b595e74f413849c459e7310bc7475bd7`](https://goerli.etherscan.io/address/0x7f86f894b595e74f413849c459e7310bc7475bd7)
 
 ## Getting started
 
@@ -62,10 +62,18 @@ npx zkey-manager compile -c ./zkeys.config.yml
 npx zkey-manager downloadPtau -c ./zkeys.config.yml
 npx zkey-manager genZkeys -c ./zkeys.config.yml
 npx snarkjs zkev ./zkeys/NftMint_.prod.0.zkey ./zkeys/verification_key.json
+node build/exportVerifier.js ./zkeys/NftMint_.prod.0.zkey ../contracts/contracts/verifier.sol
 ```
 
 Note that no phase 2 trusted setup is performed, so do not use this in
 production unless you perform one.
+
+Next, compile the contracts:
+
+```
+cd ../contracts
+npm run compileSol
+```
 
 Deploy the contracts to a testnet:
 

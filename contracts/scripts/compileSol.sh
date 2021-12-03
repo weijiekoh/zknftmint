@@ -14,5 +14,5 @@ echo 'Building contracts with Hardhat'
 npx hardhat compile
 
 # Build the Poseidon contract from bytecode
-npm run build
-node build/buildPoseidon.js
+#npm run build
+#node build/buildPoseidon.js
