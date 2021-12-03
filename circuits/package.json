@@ -12,7 +12,9 @@
         "export-test-verifier-sol": "node build/exportVerifier.js ./zkeys/NftMint_test.0.zkey ../contracts/contracts/testverifier.sol",
         "build": "tsc",
         "watch": "tsc --watch",
-        "test": "jest --runInBand"
+        "test": "jest --runInBand",
+        "test-nftMint": "jest NftMint.test.ts",
+        "test-nftMint-debug": "node --inspect-brk ./node_modules/.bin/jest NftMint.test.ts"
     },
     "repository": {
         "type": "git",
@@ -25,12 +27,13 @@
     "homepage": "https://github.com/zknftmint/project#readme",
     "dependencies": {
         "axios": "^0.23.0",
+        "circomlib": "^0.5.3",
         "circomlibjs": "^0.1.1",
         "crypto": "^1.0.1",
         "ffjavascript": "^0.2.46",
         "snarkjs": "0.4.10",
         "shelljs": "0.8.4",
-        "zkey-manager": "0.1.1",
+        "zkey-manager": "0.0.6",
         "ts-jest": "^27.0.7"
     },
     "devDependencies": {

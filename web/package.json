@@ -1,0 +1,24 @@
+{
+    "name": "zknftmint-web",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/zknftmint/project.git"
+    },
+    "author": "weijiekoh",
+    "bugs": {
+        "url": "https://github.com/zknftmint/project/issues"
+    },
+    "homepage": "https://github.com/zknftmint/project#readme",
+    "dependencies": {
+        "circomlibjs": "^0.1.1",
+        "snarkjs": "0.4.10"
+    },
+    "devDependencies": {
+        "http-server": "14.0.0"
+    }
+}

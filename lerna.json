@@ -1,6 +1,7 @@
 {
     "packages":[
         "contracts",
+        "web",
         "circuits"
     ],
     "version":"1.0.0"

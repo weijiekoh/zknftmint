@@ -1,3 +1,6 @@
+circuits/zkeys/*
+contracts/artifacts
+contracts/cache
 *.wtns
 node_modules
 circomHelperConfig.json
