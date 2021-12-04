@@ -9,8 +9,8 @@ Contract on Goerli: [`0x7f86f894b595e74f413849c459e7310bc7475bd7`](https://goerl
 Clone this repository:
 
 ```bash
-git clone git@github.com:weijiekoh/zkpnftmint.git
-cd zkpnftmint
+git clone git@github.com:weijiekoh/zknftmint.git
+cd zknftmint
 ```
 
 Run a HTTP server
