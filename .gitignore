@@ -17,3 +17,6 @@ proof.json
 public.json
 
 lerna-debug.log
+
+**/.parcel-cache/*
+**/dist/

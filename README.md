@@ -2,7 +2,7 @@
 
 Developed for 0xPARC.
 
-Contract on Goerli: [`0x7f86f894b595e74f413849c459e7310bc7475bd7`](https://goerli.etherscan.io/address/0x7f86f894b595e74f413849c459e7310bc7475bd7)
+Contract on Goerli: [`0xc4490d6407f81378c8d3620eA11092B2FC429Df2`](https://goerli.etherscan.io/address/0xc4490d6407f81378c8d3620eA11092B2FC429Df2)
 
 ## Getting started
 
@@ -13,11 +13,18 @@ git clone git@github.com:weijiekoh/zknftmint.git
 cd zknftmint
 ```
 
-Run a HTTP server
+In a separate terminal, run a HTTP server in `web/zkeys`:
+
+```bash
+cd web/zkeys
+npx http-server --cors
+```
+
+In another terminal, run the web application:
 
 ```bash
 cd web
-npx http-server --cors
+npm run serve
 ```
 
 Get Goerli ETH: https://faucet.paradigm.xyz/
@@ -33,7 +40,7 @@ Navigate to the Write Contract page for the NftMint contract on Etherscan,
 click on "Connect to Web3", and select `mintWithProof`. Copy and paste the
 nullifier and the proof, and click "Write".
 
-https://goerli.etherscan.io/address/0x7f86f894b595e74f413849c459e7310bc7475bd7#writeContract
+https://goerli.etherscan.io/address/0xc4490d6407f81378c8d3620eA11092B2FC429Df2#writeContract
 
 If the proof is valid and you have not previously used this address to mint an
 NFT on this contract, the transaction will execute and mint an NFT to your
@@ -61,8 +68,8 @@ cd circuits
 npx zkey-manager compile -c ./zkeys.config.yml
 npx zkey-manager downloadPtau -c ./zkeys.config.yml
 npx zkey-manager genZkeys -c ./zkeys.config.yml
-npx snarkjs zkev ./zkeys/NftMint_.prod.0.zkey ./zkeys/verification_key.json
-node build/exportVerifier.js ./zkeys/NftMint_.prod.0.zkey ../contracts/contracts/verifier.sol
+npx snarkjs zkev ./NftMint__prod.0.zkey ./zkeys/verification_key.json
+node build/exportVerifier.js ./zkeys/NftMint__prod.0.zkey ../contracts/contracts/verifier.sol
 ```
 
 Note that no phase 2 trusted setup is performed, so do not use this in

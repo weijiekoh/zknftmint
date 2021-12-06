@@ -2,8 +2,9 @@
     "name": "zknftmint-web",
     "version": "1.0.0",
     "description": "",
-    "main": "index.js",
     "scripts": {
+        "serve": "parcel serve src/index.html",
+        "serve-static": "cd zkeys && http-server --cors -p 8000"
     },
     "repository": {
         "type": "git",
@@ -16,6 +17,7 @@
     "homepage": "https://github.com/zknftmint/project#readme",
     "dependencies": {
         "circomlibjs": "^0.1.1",
+        "parcel": "2.0.1",
         "snarkjs": "0.4.10"
     },
     "devDependencies": {

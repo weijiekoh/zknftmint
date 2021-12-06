@@ -114,8 +114,8 @@
       ]
     },
     "/home/di/zknftmint/contracts/contracts/verifier.sol": {
-      "lastModificationDate": 1638499790824,
-      "contentHash": "b3cae212d99a8e49799afcbd013e076e",
+      "lastModificationDate": 1638823663637,
+      "contentHash": "c0cd2c3e61a56e1b3f4257f5ed072706",
       "sourceName": "contracts/verifier.sol",
       "solcConfig": {
         "version": "0.8.10",

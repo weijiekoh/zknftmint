@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>zknftmint</title>
+    <script type="module" src="app.ts"></script>
+  </head>
+  <body>
+    <h1>Mint an NFT if you can prove knowledge of a preimage</h1>
+    <p>See <a href="https://github.com/weijiekoh/zknftmint">zknftmint</a>.</p>
+
+    <p>Your address: <input id="address" /></p>
+    <p>The secret: <input id="secret" /></p>
+    <button id="bGenProof">Create proof </button>
+
+    <pre class="time">Time taken: <code id="time"></code></pre>
+    <pre class="proof">Valid?: <code id="result"></code></pre>
+    <pre class="nullifier">Nullifier: <code id="nullifier"></code></pre>
+    <pre class="proof">Proof:
+<code id="proof"></code>
+    </pre>
+  </body>
+</html>

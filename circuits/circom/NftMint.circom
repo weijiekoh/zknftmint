@@ -1,3 +1,5 @@
+pragma circom 2.0.0;
+
 include "../node_modules/circomlib/circuits/poseidon.circom";
 
 template NftMint() {
@@ -7,7 +9,7 @@ template NftMint() {
     signal input address;
 
     // The private inputs
-    signal private input preimage;
+    signal input preimage;
 
     // Hash the preimage and check if the result matches the hash.
     component hasher = Poseidon(1);
