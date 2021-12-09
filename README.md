@@ -6,18 +6,20 @@ Contract on Goerli: [`0xc4490d6407f81378c8d3620eA11092B2FC429Df2`](https://goerl
 
 ## Getting started
 
-Clone this repository:
+Clone this repository and install dependencies:
 
 ```bash
 git clone git@github.com:weijiekoh/zknftmint.git
 cd zknftmint
+npm i
+npm run bootstrap
 ```
 
 In a separate terminal, run a HTTP server in `web/zkeys`:
 
 ```bash
 cd web/zkeys
-npx http-server --cors
+npx http-server --cors -p 8000
 ```
 
 In another terminal, run the web application:
@@ -31,7 +33,7 @@ Get Goerli ETH: https://faucet.paradigm.xyz/
 
 To generate a proof and nullifier, first navigate to:
 
-http://127.0.0.1:8080
+http://127.0.0.1:1234
 
 Next, paste your ETH address from Metamask and enter the secret (currently
 hardcoded to `1234`). Click "Create proof".
