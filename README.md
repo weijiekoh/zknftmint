@@ -15,6 +15,8 @@ npm i
 npm run bootstrap
 ```
 
+You may need to manually install dependencies for `zkey-manager` by following instructions [here](https://github.com/privacy-scaling-explorations/zkey-manager#requirements).
+
 In a separate terminal, run a HTTP server in `web/zkeys`:
 
 ```bash
